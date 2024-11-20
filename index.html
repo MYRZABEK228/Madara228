@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мир Информатики</title>
+  <style>
+    /* Общие стили */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      background: #1e1e2f;
+    }
+
+    h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Шапка */
+    .header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(120deg, #6a11cb, #2575fc);
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      animation: glow 2s infinite alternate;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+    }
+
+    /* Карточки */
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      background: #282846;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      width: 300px;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h2 {
+      color: #ff7eb3;
+      margin-bottom: 10px;
+    }
+
+    /* Футер */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a27;
+    }
+
+    /* Анимация */
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff7eb3, 0 0 30px #ff7eb3;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #6a11cb, 0 0 40px #6a11cb;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Мир Информатики</h1>
+    <p>Погружение в основы технологий</p>
+  </header>
+  
+  <section class="content">
+    <div class="card">
+      <h2>Алгоритмы</h2>
+      <p>Алгоритмы — это пошаговые инструкции для решения задач.</p>
+    </div>
+    <div class="card">
+      <h2>Данные</h2>
+      <p>Данные — это информация, которая обрабатывается компьютером.</p>
+    </div>
+    <div class="card">
+      <h2>Программирование</h2>
+      <p>Программирование — искусство говорить с машинами.</p>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <p>Создано с ❤️ для выставки</p>
+  </footer>
+  <script>
+    // Сообщение в консоли для посетителей
+    console.log("Добро пожаловать в Мир Информатики!");
+  </script>
+</body>
+</html>
